@@ -20,4 +20,4 @@ $ cd random-profile-generator
 $ npm install
 ```
 
-After that you can run the app on the local development server with `npm run server` or build it with `npm run build`
+After that you can run the app using `npm run server`. To lint your code with ESLint and build a `dist/bundle.js` run `npm run build`
