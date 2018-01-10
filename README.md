@@ -6,7 +6,9 @@
 
 I created this demo primarily to learn more about [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 
-Feel free to clone the repo and play around with the source.
+To display user profile data I used the [randomuser.me API](https://randomuser.me/api).
+
+Feel free to clone the repo and play around with the source code in `src/index.js`.
 
 ## Developement
 
