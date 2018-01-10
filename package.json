@@ -1,14 +1,13 @@
 {
   "name": "user-profile-generator",
   "version": "1.0.0",
-  "description":
-    "Small demo to fetch random user profile information from public api",
+  "description": "Small demo to fetch random user profile information from public api",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "standard --fix \"src/*.js\" && webpack",
     "watch": "webpack --watch",
-    "server": "npm run watch & live-server"
+    "server": "npm run watch && live-server"
   },
   "author": "Kevin Koester",
   "license": "ISC",
@@ -16,6 +15,8 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-latest": "^6.24.1",
+    "eslint": "^4.15.0",
+    "standard": "^10.0.3",
     "webpack": "^3.10.0"
   }
 }
