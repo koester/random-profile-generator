@@ -10,7 +10,7 @@ To display user profile data I used the [randomuser.me API](https://randomuser.m
 
 Feel free to clone the repo and play around with the source code in `src/index.js`.
 
-## Developement
+## Development
 
 Clone this repo to your local maschine and install all dependencies:
 
