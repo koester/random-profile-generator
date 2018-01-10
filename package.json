@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "standard --fix \"src/*.js\" && webpack",
-    "watch": "webpack --watch",
-    "server": "npm run watch && live-server"
+    "lint": "standard \"src/index.js\"",
+    "build": "BABEL_ENV=build & lint \"src/index.js\" & webpack",
+    "start": "webpack-dev-server --content-base src --hot --open"
   },
   "author": "Kevin Koester",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "babel-preset-latest": "^6.24.1",
     "eslint": "^4.15.0",
     "standard": "^10.0.3",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.1"
   }
 }

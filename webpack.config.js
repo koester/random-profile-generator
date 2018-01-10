@@ -1,16 +1,17 @@
-const webpack = require("webpack");
+const path = require('path')
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
-    path: __dirname + "/dist",
-    filename: "bundle.js"
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
   },
-  devtool: "source-map",
-  plugins: [new webpack.optimize.UglifyJsPlugin({ minimize: true })],
+  devtool: 'source-map',
   module: {
-    loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
-    ]
+    loaders: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'babel-loader'
+    }]
   }
-};
+}
