@@ -1,12 +1,12 @@
 /* init */
-import "./component/loading"
-const api = "https://randomuser.me/api/"
-const btn = document.querySelector("button")
-const avatar = document.querySelector("#avatar")
-const name = document.querySelector("#fullname")
-const username = document.querySelector("#username")
-const email = document.querySelector("#email")
-const city = document.querySelector("#city")
+import './component/loading'
+const api = 'https://randomuser.me/api/'
+const btn = document.querySelector('button')
+const avatar = document.querySelector('#avatar')
+const name = document.querySelector('#fullname')
+const username = document.querySelector('#username')
+const email = document.querySelector('#email')
+const city = document.querySelector('#city')
 
 /**
  * Checks for response status and
@@ -67,8 +67,8 @@ const logError = error => {
   console.log(error)
 }
 
-btn.addEventListener("click", function () {
-  fetch(api)
+btn.addEventListener('click', function () {
+  window.fetch(api)
     .then(handleResponseErrors)
     .then(parseJSON)
     .then(updateProfile)
