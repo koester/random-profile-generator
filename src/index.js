@@ -67,7 +67,7 @@ const logError = error => {
   console.log(error)
 }
 
-btn.addEventListener("click", function() {
+btn.addEventListener("click", function () {
   fetch(api)
     .then(handleResponseErrors)
     .then(parseJSON)
